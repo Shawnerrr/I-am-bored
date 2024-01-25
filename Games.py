@@ -34,13 +34,14 @@ def list_games(player_name):
         else:
             print("\n\033[4mPlease smake sure you are entering the correct input\033[0m\n")
 
-def roll_die_1():
-    return random.randint(1,6)
-
-def roll_die_2():
-    return random.randint(1,6)
 
 def dice_game(player_name):
+    def roll_die_1():
+        return random.randint(1,6)
+
+    def roll_die_2():
+        return random.randint(1,6)
+    
     while True:
         clear()
         input(f"{player_name}, please press enter to roll both dice")
